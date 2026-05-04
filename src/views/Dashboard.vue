@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
      
-        <v-card style="margin: 32px 150px">
+        <v-card d-flex  style="margin: 32px 150px">
             <v-card-text>
                 <v-card-title class="font-weight-bold" >Welcome back, John!</v-card-title>
                 <v-card-subtitle>Manage your information and view the latest data below.</v-card-subtitle>
