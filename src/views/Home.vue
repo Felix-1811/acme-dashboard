@@ -1,120 +1,56 @@
-<template>
-  <v-main>
-    <div class="d-flex" style="gap: 24px; padding: 32px">
+<script setup lang="ts">
 
-      <!-- Linke Leiste -->
-      <v-card width="220">
-        <v-list>
-          <v-list-item
-            title="Profile Settings"
-            prepend-icon="mdi-account"
-            :active="activeTab === 'profile'"
-            @click="activeTab = 'profile'"
-            color="primary"
-          ></v-list-item>
-          <v-list-item
-            title="Login & Security"
-            prepend-icon="mdi-lock"
-            :active="activeTab === 'security'"
-            @click="activeTab = 'security'"
-            color="primary"
-          ></v-list-item>
-        </v-list>
-      </v-card>
-
-      <!-- Rechter Inhalt -->
-      <v-card style="flex: 1"  max-width: 300px>
-
-        <div v-if="activeTab === 'profile'">
-          <v-card-title class="font-weight-bold mt-4">Profile-Settings</v-card-title>
-          <v-card-text>
-            <v-avatar icon="$vuetify" image="../img/profilepic.jpg" size="80"></v-avatar>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Department</div>
-                <div>HR</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Name</div>
-                <div>John Doe</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Description</div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Country</div>
-                <div>Austria</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Email</div>
-                <div>john.doe@example.com</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Phone number</div>
-                <div>N/A</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-          </v-card-text>
-        </div>
-
-        <div v-if="activeTab === 'security'">
-          <v-card-title class="font-weight-bold mt-4">Login & Security</v-card-title>
-          <v-card-text>
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Password</div>
-                <div>••••••••</div>
-              </div>
-              <v-btn variant="text" color="primary">Edit</v-btn>
-            </div>
-            <v-divider></v-divider>
-
-            <div class="d-flex justify-space-between align-center py-3">
-              <div>
-                <div class="text-caption text-grey">Two-Factor Authentication</div>
-                <div>Disabled</div>
-              </div>
-              <v-btn variant="text" color="primary">Enable</v-btn>
-            </div>
-            <v-divider></v-divider>
-          </v-card-text>
-        </div>
-
-      </v-card>
-    </div>
-  </v-main>
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-const activeTab = ref('profile')
 </script>
+
+<template>
+  <v-app>
+    <v-main>
+     
+        <v-card d-flex  style="margin: 32px 150px">
+            
+            <v-card-title class="font-weight-bold">Good morning, John!</v-card-title>
+            <v-card-subtitle> Mittwoch, 6. Mai 2026</v-card-subtitle>
+            <v-row class =" pt-16 pl-16 pr-16" justify="center">
+              <v-col cols="3">
+                    <v-card>
+                <v-card-text class="text-center">
+                  <h2 class= "font-weight-bold"> 5</h2>
+                     <h3 > Users</h3>
+                </v-card-text>
+              </v-card>  
+              </v-col>
+               <v-col cols="3">
+                    <v-card>
+                <v-card-text class="text-center">
+                    <h2 class="font-weight-bold"> 3</h2>
+                     <h3 > Depts</h3>
+                </v-card-text>
+              </v-card>  
+              </v-col>
+               <v-col cols="3">
+                    <v-card >
+                <v-card-text class="text-center">
+                    <h2 class="font-weight-bold"> 8</h2>
+                     <h3 > Tasks</h3>
+                </v-card-text>
+              </v-card>  
+              </v-col>
+        
+
+            </v-row>
+                    <v-row justify="center" class="pa-8">
+          <v-btn color="primary" class="mr-4" to="/dashboard">
+            <v-icon class="mr-2">mdi-view-dashboard</v-icon>
+            Go to Dashboard
+          </v-btn>
+          <v-btn variant="outlined" to="/settings">
+            <v-icon class="mr-2">mdi-account</v-icon>
+            Edit Profile
+          </v-btn>
+        </v-row>
+                    
+        </v-card>
+
+    </v-main>
+  </v-app>
+</template>
