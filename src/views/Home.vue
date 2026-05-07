@@ -7,7 +7,7 @@
     <v-main>
      
         <v-card d-flex  style="margin: 32px 150px">
-            
+            <v-card-text> 
             <v-card-title class="font-weight-bold">Good morning, John!</v-card-title>
             <v-card-subtitle> Mittwoch, 6. Mai 2026</v-card-subtitle>
             <v-row class =" pt-16 pl-16 pr-16" justify="center">
@@ -48,7 +48,7 @@
             Edit Profile
           </v-btn>
         </v-row>
-                    
+                 </v-card-text>   
         </v-card>
 
     </v-main>

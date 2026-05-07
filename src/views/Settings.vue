@@ -1,9 +1,9 @@
 <template>
   <v-main style="padding-top: 32px;" >
    <div class="d-flex" > 
-<v-card class="mx-auto" max-width="750" >      <v-card-title class="font-weight-bold mt-4">Profile-Settings</v-card-title>
+<v-card class="mx-auto" max-width="750" style="margin-bottom: 10px;"  >      <v-card-title class="font-weight-bold mt-4">Profile-Settings</v-card-title>
 
-      <v-card-text>
+      <v-card-text >
 
 
       <v-avatar icon="$vuetify" image="../img/profilepic.jpg" size="80"></v-avatar>
