@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Settings from '../views/Settings.vue'
+import Emojis from '@/views/Emojis.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -9,6 +10,7 @@ const router = createRouter({
     { path: '/', component: Home },
     { path: '/dashboard', component: Dashboard },
     { path: '/settings', component: Settings },
+    { path: '/emojis', component: Emojis },
   ]
 })
 

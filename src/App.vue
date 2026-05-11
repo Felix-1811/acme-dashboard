@@ -14,6 +14,7 @@
     <v-tab to="/"><v-icon class="mr-2">mdi-home </v-icon> Home</v-tab>
     <v-tab to="/dashboard"><v-icon class="mr-2">mdi-view-dashboard </v-icon>Dashboard</v-tab>
     <v-tab to="/settings"><v-icon class="mr-2">mdi-cog</v-icon>Settings</v-tab>
+     <v-tab to="/emojis"><v-icon class="mr-2">mdi-emoticon-outline</v-icon>Emojis</v-tab>
   </v-tabs>
 
   <v-spacer />
